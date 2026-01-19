@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rohan Sinha | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+
+    <!-- Hero -->
+    <section class="hero">
+      <h1>Rohan Sinha</h1>
+      <p class="subtitle">
+        Software Engineer · Distributed Systems · Full Stack · Cloud
+      </p>
+      <div class="actions">
+        <a class="btn secondary" href="mailto:rohansinha3599@gmail.com">Contact</a>
+        <a class="btn outline" href="https://www.linkedin.com/in/rohansinha4/" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section>
+      <h2>About</h2>
+      <p>
+        I am a Software Engineer with 3+ years of experience building scalable
+        backend systems, high-performance APIs, and modern full-stack
+        applications. Currently pursuing an MS in Computer Science at the
+        University of Southern California, I specialize in Java, Spring Boot,
+        React, and cloud-native architectures on AWS and GCP.
+      </p>
+    </section>
+
+    <!-- Experience -->
+    <section>
+      <h2>Experience</h2>
+
+      <div class="card">
+        <h3>Associate SDE II – Publicis Sapient</h3>
+        <span class="muted">Jun 2022 – Jul 2025</span>
+        <ul>
+          <li>Architected Java Spring Boot microservices ingesting 5M+ products/day</li>
+          <li>Reduced order fulfillment time by 96% using GCP schedulers</li>
+          <li>Integrated Stripe, Google Pay, and Auth0 SSO for 40M+ users</li>
+          <li>Optimized APIs to sub-100ms latency with Redis & SQL tuning</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Full Stack Engineer Intern – Daphnis Labs</h3>
+        <span class="muted">Jan 2022 – May 2022</span>
+        <ul>
+          <li>Built React & Next.js UIs with &lt;1s load time</li>
+          <li>Designed Shopify heatmap analytics used by 200k+ users/month</li>
+          <li>Improved bounce rate by 60% through data-driven UI changes</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <h2>Projects & Research</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Side-Channel Attack Analysis</h3>
+          <p>
+            Built ML models (Bi-LSTM, CNN, RNN) on mobile sensor data to predict
+            gesture patterns with 81% accuracy.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Monkeypox Inhibitor Discovery</h3>
+          <p>
+            Co-authored ML + molecular dynamics research identifying inhibitors
+            of the P37 protein (published May 2023).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section>
+      <h2>Skills</h2>
+      <p>
+        <strong>Languages:</strong> Java, C++, Python, JavaScript, TypeScript, SQL<br/>
+        <strong>Frameworks:</strong> Spring Boot, React, Next.js, Node.js<br/>
+        <strong>Cloud:</strong> AWS, GCP, Docker, Kubernetes, CI/CD
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <span>© <span id="year"></span> Rohan Sinha</span>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/rohansinha4/" target="_blank">LinkedIn</a>
+        <a href="mailto:rohansinha3599@gmail.com">Email</a>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
