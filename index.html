@@ -1,110 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rohan Sinha | Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Rohan Sinha — software engineer building scalable backend, cloud, ML and graphics systems.">
+  <title>Rohan Sinha | Software Engineer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="container">
+<header class="nav"><a class="brand" href="#top">RS</a><nav><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="mailto:rohansinha3599@gmail.com">Contact</a></nav></header>
+<main id="top">
+<section class="hero wrap">
+  <p class="eyebrow">SOFTWARE ENGINEER · USC MSCS</p>
+  <h1>I build scalable systems,<br><span>intelligent models, and visual computing tools.</span></h1>
+  <p class="lede">3+ years of engineering experience across backend platforms, distributed systems, cloud infrastructure, full-stack products, machine learning, and computer graphics.</p>
+  <div class="actions"><a class="btn primary" href="#projects">View featured work</a><a class="btn" href="https://github.com/Rohan-3599" target="_blank" rel="noreferrer">GitHub ↗</a><a class="btn" href="https://www.linkedin.com/in/rohansinha4/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+  <div class="metrics"><div><strong>5M+</strong><span>products / pipeline</span></div><div><strong>$2M+</strong><span>workflow savings</span></div><div><strong>40M+</strong><span>customers supported</span></div><div><strong>&lt;100ms</strong><span>API latency</span></div></div>
+</section>
 
-    <!-- Hero -->
-    <section class="hero">
-      <h1>Rohan Sinha</h1>
-      <p class="subtitle">
-        Software Engineer · Distributed Systems · Full Stack · Cloud
-      </p>
-      <div class="actions">
-        <a class="btn secondary" href="mailto:rohansinha3599@gmail.com">Contact</a>
-        <a class="btn outline" href="https://www.linkedin.com/in/rohansinha4/" target="_blank">LinkedIn</a>
-      </div>
-    </section>
+<section id="projects" class="wrap section"><div class="section-head"><p class="eyebrow">FEATURED WORK</p><h2>Projects that go beyond the resume.</h2></div>
+<article class="feature">
+ <div class="feature-copy"><span class="num">01</span><p class="kicker">COMPUTER GRAPHICS · PROCEDURAL GENERATION</p><h3>Constraint-Driven Procedural Terrain</h3><p>Interactive terrain generation that combines procedural noise with graph-based spatial reasoning. Voronoi regions provide large-scale structure while a Wave Function Collapse-inspired solver enforces coherent biome adjacency.</p><div class="chips"><span>C++17</span><span>OpenGL 3.3</span><span>Voronoi</span><span>WFC</span><span>Constraint Solving</span></div><ul><li>Implemented Voronoi region generation and biome adjacency representation.</li><li>Built the WFC-inspired solver with entropy selection, constraint propagation, and backtracking.</li><li>Implemented blending and interpolation for smooth biome transitions.</li></ul><p class="note">Team project · My contribution: Voronoi generation, WFC solver, blending & interpolation.</p></div>
+ <div class="visual-stack"><figure><img src="assets/terrain-process.png" alt="Voronoi partition, WFC biome assignment and blended terrain transitions"><figcaption>Voronoi → constrained biome assignment → smooth blending</figcaption></figure><figure><img src="assets/terrain-final.png" alt="Final procedural terrain render and mountain variant"><figcaption>Real-time terrain render and mountain variant</figcaption></figure></div>
+</article>
 
-    <!-- About -->
-    <section>
-      <h2>About</h2>
-      <p>
-        I am a Software Engineer with 3+ years of experience building scalable
-        backend systems, high-performance APIs, and modern full-stack
-        applications. Currently pursuing an MS in Computer Science at the
-        University of Southern California, I specialize in Java, Spring Boot,
-        React, and cloud-native architectures on AWS and GCP.
-      </p>
-    </section>
+<article class="feature reverse">
+ <div class="feature-copy"><span class="num">02</span><p class="kicker">DEEP LEARNING · COMPUTER VISION</p><h3>Detecting AI-Generated Video from Geometric Consistency</h3><p>A geometry-first deepfake detection pipeline that converts cross-frame correspondences into dense inlier/outlier feature maps and trains a 3D CNN to classify real versus synthetic video.</p><div class="chips"><span>3D CNN</span><span>SIFT</span><span>RANSAC</span><span>COLMAP</span><span>GenVideo</span></div><div class="project-metrics"><div><strong>78.29%</strong><span>best accuracy</span></div><div><strong>0.7788</strong><span>F1 score</span></div><div><strong>~20K</strong><span>training samples</span></div></div><ul><li>Extracted geometric feature maps from SIFT correspondences and RANSAC inlier/outlier density.</li><li>Evaluated expansion, contraction, and bottleneck 3D CNN architectures.</li><li>Tested cross-generator generalization on a 16K-sample validation subset.</li></ul></div>
+ <div class="visual-stack"><figure><img src="assets/video-model.png" alt="3D CNN model architecture for AI-generated video detection"><figcaption>Geometry feature maps → 3D CNN classifier</figcaption></figure><figure><img src="assets/video-results.png" alt="Benchmark and ablation results for AI-generated video detection"><figcaption>Benchmark and architecture ablation results</figcaption></figure></div>
+</article>
+</section>
 
-    <!-- Experience -->
-    <section>
-      <h2>Experience</h2>
+<section id="experience" class="wrap section"><div class="section-head"><p class="eyebrow">ENGINEERING EXPERIENCE</p><h2>Production systems at scale.</h2></div>
+<div class="timeline">
+<article><div class="when">2022 — 2025</div><div><h3>Associate Software Development Engineer II <span>· Publicis Sapient</span></h3><p>Built and modernized production systems across Java/Spring Boot, GCP and commerce infrastructure.</p><div class="impact"><span>5M+ product ingestion</span><span>$2M+ savings</span><span>96% faster fulfillment</span><span>40M+ customers</span><span>95% test coverage</span></div></div></article>
+<article><div class="when">2022</div><div><h3>Full Stack Engineer Intern <span>· Daphnis Labs</span></h3><p>React/Next.js product engineering, Redis-backed API optimization and Shopify behavioral analytics.</p><div class="impact"><span>&lt;1s load time</span><span>40% API improvement</span><span>200K+ monthly interactions</span></div></div></article>
+<article><div class="when">2021</div><div><h3>Full Stack Engineer & ML Intern <span>· Quanta Vid</span></h3><p>Frontend engineering, NLP sentiment analysis and optimized video-generation APIs.</p><div class="impact"><span>25% engagement lift</span><span>80% NLP accuracy</span><span>40% faster processing</span></div></div></article>
+</div>
+</section>
 
-      <div class="card">
-        <h3>Associate SDE II – Publicis Sapient</h3>
-        <span class="muted">Jun 2022 – Jul 2025</span>
-        <ul>
-          <li>Architected Java Spring Boot microservices ingesting 5M+ products/day</li>
-          <li>Reduced order fulfillment time by 96% using GCP schedulers</li>
-          <li>Integrated Stripe, Google Pay, and Auth0 SSO for 40M+ users</li>
-          <li>Optimized APIs to sub-100ms latency with Redis & SQL tuning</li>
-        </ul>
-      </div>
+<section class="wrap section split"><div><p class="eyebrow">CURRENT @ USC</p><h2>Teaching, AI & campus engineering.</h2></div><div class="mini-grid"><article><h3>Grader · CSCI 599 Agentic AI</h3><p>Technical evaluation and feedback for a 170+ student course.</p></article><article><h3>Student Software Developer</h3><p>.NET backend/orchestration APIs and 50+ SQL stored procedures for enterprise applications.</p></article><article><h3>Teaching Assistant · K–12 STEM</h3><p>Taught Python fundamentals and hands-on programming to 20 students.</p></article><article><h3>Outreach Program Assistant</h3><p>Led campus event logistics, including programs serving 70+ and 150+ participants.</p></article></div></section>
 
-      <div class="card">
-        <h3>Full Stack Engineer Intern – Daphnis Labs</h3>
-        <span class="muted">Jan 2022 – May 2022</span>
-        <ul>
-          <li>Built React & Next.js UIs with &lt;1s load time</li>
-          <li>Designed Shopify heatmap analytics used by 200k+ users/month</li>
-          <li>Improved bounce rate by 60% through data-driven UI changes</li>
-        </ul>
-      </div>
-    </section>
+<section id="skills" class="wrap section"><div class="section-head"><p class="eyebrow">TOOLBOX</p><h2>Technologies I work with.</h2></div><div class="skills"><div><h3>Languages</h3><p>Java · C# · C++ · Python · R · JavaScript · TypeScript · SQL</p></div><div><h3>Frameworks & Systems</h3><p>Spring Boot · .NET · React · Next.js · Node.js · Hybris · Redis · Splunk</p></div><div><h3>Cloud & DevOps</h3><p>AWS · GCP · Azure · Docker · Kubernetes · Jenkins · Git · CI/CD</p></div><div><h3>Scientific / ML</h3><p>3D CNNs · OpenGL · SIFT · RANSAC · AlphaFold2 · RoseTTAFold · HADDOCK</p></div></div></section>
 
-    <!-- Projects -->
-    <section>
-      <h2>Projects & Research</h2>
-
-      <div class="grid">
-        <div class="card">
-          <h3>Side-Channel Attack Analysis</h3>
-          <p>
-            Built ML models (Bi-LSTM, CNN, RNN) on mobile sensor data to predict
-            gesture patterns with 81% accuracy.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Monkeypox Inhibitor Discovery</h3>
-          <p>
-            Co-authored ML + molecular dynamics research identifying inhibitors
-            of the P37 protein (published May 2023).
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section>
-      <h2>Skills</h2>
-      <p>
-        <strong>Languages:</strong> Java, C++, Python, JavaScript, TypeScript, SQL<br/>
-        <strong>Frameworks:</strong> Spring Boot, React, Next.js, Node.js<br/>
-        <strong>Cloud:</strong> AWS, GCP, Docker, Kubernetes, CI/CD
-      </p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <span>© <span id="year"></span> Rohan Sinha</span>
-      <div class="footer-links">
-        <a href="https://www.linkedin.com/in/rohansinha4/" target="_blank">LinkedIn</a>
-        <a href="mailto:rohansinha3599@gmail.com">Email</a>
-      </div>
-    </footer>
-
-  </main>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+<section class="wrap section certs"><p class="eyebrow">CERTIFICATIONS</p><p>AWS Certified Cloud Practitioner · Oracle Data Platform Certified Foundations Associate · Foundational C# with Microsoft · Oracle Cloud Infrastructure Foundations Associate · Oracle Cloud Infrastructure AI Foundations Associate</p></section>
+<section class="wrap contact"><p class="eyebrow">LET'S CONNECT</p><h2>Interested in backend, platform, cloud, AI/ML and graphics engineering opportunities.</h2><div class="actions"><a class="btn primary" href="mailto:rohansinha3599@gmail.com">rohansinha3599@gmail.com</a><a class="btn" href="https://github.com/Rohan-3599" target="_blank">GitHub ↗</a></div></section>
+</main>
+<footer class="wrap footer"><span>© <span id="year"></span> Rohan Sinha</span><span>Los Angeles, CA</span></footer>
+<script src="script.js"></script>
+</body></html>
