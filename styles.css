@@ -3,3 +3,4 @@
 /* Project resource links */
 .project-actions{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:1.15rem}
 .btn.small{padding:.65rem .9rem;font-size:.86rem}
+.timeline ul{margin:10px 0 0;padding-left:20px;color:#c9d2de}.timeline li{margin:7px 0}.timeline strong,.mini-grid strong{color:var(--text)}

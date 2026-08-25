@@ -1,11 +1,11 @@
 # Rohan Sinha — Portfolio
 
-Personal engineering portfolio featuring production software experience and selected USC projects.
+Personal engineering portfolio aligned with the current resume.
 
 ## Featured projects
 
-- **Constraint-Driven Procedural Terrain** — C++17/OpenGL procedural terrain with Voronoi regions and a WFC-inspired constraint solver. Includes public source code and technical report.
-- **Detecting AI-Generated Video from Geometric Consistency** — SIFT/RANSAC geometric feature maps with a 3D CNN classifier. Includes the technical report; source code is intentionally not linked because the repository belongs to a collaborator and is private.
+- **Constraint-Driven Procedural Terrain Generation** — C++17, OpenGL, SDL2, GLSL. Includes source code and technical report.
+- **AI-Generated Video Detection via Geometric Consistency** — Python, PyTorch, OpenCV, COLMAP. Includes technical report.
 
 ## Run locally
 
@@ -13,8 +13,4 @@ Open `index.html` directly in a browser, or serve the directory with any static 
 
 ## GitHub Pages
 
-This site is designed to deploy directly from the repository root on GitHub Pages.
-
-## Demo video
-
-A graphics demo link can be added to the terrain project when the recording is ready.
+Deploy directly from the repository root on GitHub Pages.
